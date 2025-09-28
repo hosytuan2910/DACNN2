@@ -35,27 +35,175 @@
           </div>
         </div>
       </div>
-      <div class="home">
+
+      <div class="header">
         <div class="thanhdieuhuong">
-          <div class="Fruit">
-            <h2>Fruit xin chào quý khách!</h2>
-          </div>
-          <div class="dieuhuong">
-            <ul>
-              <li>Trang chủ</li>
-              <li>Sản phẩm</li>
-              <li>Giới thiệu</li>
-              <li>Liên hệ</li>
-            </ul>
+          <div class="welcome">Fruit xin chào quý khách!</div>
+          <div class="header-left">
+            <div class="nav">
+              <a href="#">Trang chủ</a>
+              <a href="#">Sản Phẩm</a>
+              <a href="#">Giới Thiệu</a>
+              <a href="#">Liên Hệ</a>
+            </div>
           </div>
         </div>
         <div class="logo">
-          <img src="DACN/home.png" alt="" />
+          <img src="DACN/logo.png" alt="Fruit Logo" />
+        </div>
+        <div class="header-right">
+          <div class="search-bar">
+            <input type="text" placeholder="tìm sản phẩm" />
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7"></circle>
+                <line x1="16.65" y1="16.65" x2="22" y2="22"></line>
+              </svg>
+            </div>
+          </div>
+
+          <div class="item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 21s-6-4.35-9-8.5S3.5 3 7.5 3c2 0 4 1 4.5 2.09C12.5 4 14.5 3 16.5 3 20.5 3 24 7 21 12.5S12 21 12 21z"
+              ></path>
+            </svg>
+            <span class="count">0</span>
+          </div>
+
+          <div class="item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+            <span class="count">0</span>
+          </div>
+
+          <div class="item user">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M6 20c0-3.33 2.67-6 6-6s6 2.67 6 6"></path>
+            </svg>
+          </div>
         </div>
       </div>
 
-      <h1>TUẤN KHÔNG BÁN TRÁI CÂYYY</h1>
+      <main>
+        <div class="nenmain">
+          <img src="DACN/trang chủ.png" alt="" />
+        </div>
+        <div class="Rectangle"></div>
+        <div class="navigation-bar">
+          <button class="nav-button" onclick="handleClick('az')">Từ A→Z</button>
+          <button class="nav-button" onclick="handleClick('tang')">
+            Giá Tăng Dần
+          </button>
+          <button class="nav-button" onclick="handleClick('giam')">
+            Giá Giảm Dần
+          </button>
+          <button class="nav-button" onclick="handleClick('moi')">
+            Hàng Mới
+          </button>
+        </div>
+        <div class="hot-header">
+          <div class="divider-line"></div>
+          <h1 class="hot-title">Hot Hôm Nay</h1>
+        </div>
+      </main>
+      <div class="products-container">
+        <div class="product-card">
+          <div class="product-image kiwi-image"></div>
+          <div class="product-title">
+            kiwi nezland thom ngon toả sáng á âu _Zneland
+          </div>
+          <div class="product-price">399.000đ</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart(this, 'Kiwi Nezland')"
+          >
+            +Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image durian-image"></div>
+          <div class="product-title">
+            <span class="product-name-green">Sầu riêng cơm Ri6</span><br />
+            Huynh Lam (W00315)
+          </div>
+          <div class="product-price">399.000đ</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart(this, 'Sầu riêng cơm Ri6')"
+          >
+            +Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image kiwi-image"></div>
+          <div class="product-title">
+            kiwi nezland thom ngon toả sáng á âu _Zneland
+          </div>
+          <div class="product-price">399.000đ</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart(this, 'Kiwi Nezland')"
+          >
+            +Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image kiwi-image"></div>
+          <div class="product-title">
+            kiwi nezland thom ngon toả sáng á âu _Zneland
+          </div>
+          <div class="product-price">399.000đ</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart(this, 'Kiwi Nezland')"
+          >
+            +Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image kiwi-image"></div>
+          <div class="product-title">
+            kiwi nezland thom ngon toả sáng á âu _Zneland
+          </div>
+          <div class="product-price">399.000đ</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart(this, 'Kiwi Nezland')"
+          >
+            +Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image kiwi-image"></div>
+          <div class="product-title">
+            kiwi nezland thom ngon toả sáng á âu _Zneland
+          </div>
+          <div class="product-price">399.000đ</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart(this, 'Kiwi Nezland')"
+          >
+            +Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="view-more-container">
+          <button class="view-more-btn" onclick="viewMore()">Xem Thêm</button>
+        </div>
+      </div>
     </body>
-    <script src="script.js"></script>
   </div>
+  <script src="script.js"></script>
 </html>
