@@ -65,3 +65,46 @@ style.textContent = `
             }
         `;
 document.head.appendChild(style);
+
+function selectCategory(button) {
+  const buttons = document.querySelectorAll(".category-button");
+  buttons.forEach((btn) => btn.classList.remove("active"));
+  button.classList.add("active");
+}
+
+function showProducts() {
+  const activeCategory = document
+    .querySelector(".category-button.active")
+    .textContent.replace(/\n/g, " ");
+  console.log("Hiển thị sản phẩm cho:", activeCategory);
+}
+
+function applyDiscount(amount) {
+  alert("Đã áp dụng mã giảm giá " + amount);
+}
+
+function applyPromoCode() {
+  const input = document.querySelector(".code-field");
+  if (input.value.trim()) {
+    alert("Đã áp dụng mã: " + input.value);
+    input.value = "";
+  } else {
+    alert("Vui lòng nhập mã khuyến mãi");
+  }
+}
+
+function buyDeal(product) {
+  alert("Mua Deal Hot: " + product);
+}
+
+function addToCartDeal(product) {
+  alert("Đã thêm vào giỏ hàng: " + product);
+}
+
+function buyFlash(product) {
+  alert("Mua Flash Sale: " + product);
+}
+
+function addToCartFlash(product) {
+  alert("Đã thêm Flash Sale vào giỏ hàng: " + product);
+}

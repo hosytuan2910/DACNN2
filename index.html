@@ -6,204 +6,855 @@
     <link rel="stylesheet" href="style.css" />
     <title>Shipping Banner</title>
   </head>
-  <div class="overlay" onclick="handleClick()" id="clickLayer">
-    <body>
-      <div class="shipping-banner">
-        <div class="banner-item">
-          <img src="DACN/menu3.png" alt="" />
-          <div class="content">
-            <h3>FREE SHIP</h3>
-            <p>Free ship Nội thành Tphcm cho đơn<br />hàng từ 300k</p>
+
+  <body>
+    <div class="shipping-banner">
+      <div class="banner-item">
+        <img src="DACN/menu3.png" alt="" />
+        <div class="content">
+          <h3>FREE SHIP</h3>
+          <p>Free ship Nội thành Tphcm cho đơn<br />hàng từ 300k</p>
+        </div>
+      </div>
+      <div class="nghieng"></div>
+      <div class="banner-item">
+        <img src="DACN/menu5.png" alt="" />
+        <div class="content">
+          <h3>BẢO HÀNH 48H</h3>
+          <p>
+            Công ty đầu tiên và duy nhất tại Việt Nam HOÀN TIỀN và <br />
+            ĐỔI TRẢ hàng KHÔNG LÝ DO trong vòng 48h
+          </p>
+        </div>
+      </div>
+      <div class="nghieng"></div>
+      <div class="banner-item">
+        <img src="DACN/menu2.png" alt="" />
+        <div class="content">
+          <h3>GIAO HÀNG TẬN NƠI</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="thanhdieuhuong">
+        <div class="welcome">Fruit xin chào quý khách!</div>
+        <div class="header-left">
+          <div class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản Phẩm</a>
+            <a href="#">Giới Thiệu</a>
+            <a href="#">Liên Hệ</a>
           </div>
         </div>
-        <div class="nghieng"></div>
-        <div class="banner-item">
-          <img src="DACN/menu5.png" alt="" />
-          <div class="content">
-            <h3>BẢO HÀNH 48H</h3>
-            <p>
-              Công ty đầu tiên và duy nhất tại Việt Nam HOÀN TIỀN và <br />
-              ĐỔI TRẢ hàng KHÔNG LÝ DO trong vòng 48h
-            </p>
+      </div>
+      <div class="logo">
+        <img src="DACN/logo.png" alt="Fruit Logo" />
+      </div>
+      <div class="header-right">
+        <div class="search-bar">
+          <input type="text" placeholder="tìm sản phẩm" />
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="16.65" y1="16.65" x2="22" y2="22"></line>
+            </svg>
           </div>
         </div>
-        <div class="nghieng"></div>
-        <div class="banner-item">
-          <img src="DACN/menu2.png" alt="" />
-          <div class="content">
-            <h3>GIAO HÀNG TẬN NƠI</h3>
+
+        <div class="item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 21s-6-4.35-9-8.5S3.5 3 7.5 3c2 0 4 1 4.5 2.09C12.5 4 14.5 3 16.5 3 20.5 3 24 7 21 12.5S12 21 12 21z"
+            ></path>
+          </svg>
+          <span class="count">0</span>
+        </div>
+
+        <div class="item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path
+              d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+            ></path>
+          </svg>
+          <span class="count">0</span>
+        </div>
+
+        <div class="item user">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M6 20c0-3.33 2.67-6 6-6s6 2.67 6 6"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="nenmain">
+        <img src="DACN/trang chủ.png" alt="" />
+      </div>
+    </main>
+    <div class="container">
+      <div class="header-container">
+        <div class="header-tab">
+          <div class="home-icon"></div>
+          <div class="header-title">Trang chủ</div>
+        </div>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="content">
+        <div class="button-grid">
+          <button class="category-button" onclick="selectCategory(this)">
+            Trái cây<br />hôm nay
+          </button>
+          <button class="category-button" onclick="selectCategory(this)">
+            Trái cây<br />Việt Nam
+          </button>
+          <button class="category-button" onclick="selectCategory(this)">
+            Trái cây<br />nhập khẩu
+          </button>
+          <button class="category-button active" onclick="selectCategory(this)">
+            Quà tặng<br />trái cây
+          </button>
+          <button class="category-button" onclick="selectCategory(this)">
+            Trái cây<br />cắt sẵn
+          </button>
+          <button class="category-button" onclick="selectCategory(this)">
+            Trái cây<br />sấy khô
+          </button>
+        </div>
+      </div>
+      <div class="main-button-container">
+        <button class="main-button" onclick="showProducts()">Sản phẩm</button>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="section-header">
+        <div class="header-top">
+          <div class="top-line"></div>
+          <button class="view-more-btn" onclick="viewMore()">
+            Xem thêm sản phẩm
+          </button>
+        </div>
+        <h2 class="section-title">Trái cây hôm nay</h2>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image grape-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 152910.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Nho xanh Sweet Globe Mỹ - 500G</div>
+          <div class="product-price">200.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Nho xanh Sweet Globe Mỹ')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Nho xanh Sweet Globe Mỹ')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image durian-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 164243.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Sầu riêng com Ri6 Huynh Lâm (W00315)</div>
+          <div class="product-price">350.000đ</div>
+          <div class="product-actions">
+            <button class="btn-buy" onclick="buyProduct('Sầu riêng com Ri6')">
+              Mua
+            </button>
+            <button class="btn-cart" onclick="addToCart('Sầu riêng com Ri6')">
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image cherry-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 164459.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Cherry đỏ Canada size 10 - 250G</div>
+          <div class="product-price">142.000đ</div>
+          <div class="product-actions">
+            <button class="btn-buy" onclick="buyProduct('Cherry đỏ Canada')">
+              Mua
+            </button>
+            <button class="btn-cart" onclick="addToCart('Cherry đỏ Canada')">
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image orange-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 164642.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Cam Sành Vắt Nước -1kg</div>
+          <div class="product-price">56.000đ</div>
+          <div class="product-actions">
+            <button class="btn-buy" onclick="buyProduct('Cam Sành Vắt Nước')">
+              Mua
+            </button>
+            <button class="btn-cart" onclick="addToCart('Cam Sành Vắt Nước')">
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image orange-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 165001.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Nho rượu Kyoho Hàn Quốc (450G/Hộp)</div>
+          <div class="product-price">210.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Nho rượu Kyoho Hàn Quốc')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Nho rượu Kyoho Hàn Quốc')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image orange-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 165226.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">
+            Táo Fuji New Zealand size 70 - 90 | 1KG
+          </div>
+          <div class="product-price">150.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Táo Fuji New Zealand')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Táo Fuji New Zealand')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image orange-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 165611.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Kiwi vàng New Zealand (2 Trái/Hộp)</div>
+          <div class="product-price">96.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Kiwi vàng New Zealand')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Kiwi vàng New Zealand')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image orange-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 170538.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Lê má hồng Nam Phi - 1KG</div>
+          <div class="product-price">110.000đ</div>
+          <div class="product-actions">
+            <button class="btn-buy" onclick="buyProduct('Lê má hồng Nam Phi')">
+              Mua
+            </button>
+            <button class="btn-cart" onclick="addToCart('Lê má hồng Nam Phi')">
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="section-header">
+        <div class="header-top">
+          <div class="top-line"></div>
+          <button class="view-more-btn" onclick="viewMore()">
+            Xem thêm sản phẩm
+          </button>
+        </div>
+        <h2 class="section-title">Trái cây Việt Nam</h2>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image grape-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 170417.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Chuối Dole 3 trái (I0004884)</div>
+          <div class="product-price">40.000đ</div>
+          <div class="product-actions">
+            <button class="btn-buy" onclick="buyProduct('Chuối Dole 3 trái')">
+              Mua
+            </button>
+            <button class="btn-cart" onclick="addToCart('Chuối Dole 3 trái')">
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image durian-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 164243.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Sầu riêng com Ri6 Huynh Lâm (W00315)</div>
+          <div class="product-price">350.000đ</div>
+          <div class="product-actions">
+            <button class="btn-buy" onclick="buyProduct('Sầu riêng com Ri6')">
+              Mua
+            </button>
+            <button class="btn-cart" onclick="addToCart('Sầu riêng com Ri6')">
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image cherry-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 164459.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Cherry đỏ Canada size 10 - 250G</div>
+          <div class="product-price">142.000đ</div>
+          <div class="product-actions">
+            <button class="btn-buy" onclick="buyProduct('Cherry đỏ Canada')">
+              Mua
+            </button>
+            <button class="btn-cart" onclick="addToCart('Cherry đỏ Canada')">
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image orange-img">
+            <img
+              src="DACN/wed trái cây/Screenshot 2025-09-24 165001.png"
+              alt=""
+            />
+          </div>
+          <div class="product-name">Nho rượu Kyoho Hàn Quốc (450G/Hộp)</div>
+          <div class="product-price">210.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Nho rượu Kyoho Hàn Quốc')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Nho rượu Kyoho Hàn Quốc')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="section-header">
+        <div class="header-top">
+          <div class="top-line"></div>
+          <button class="view-more-btn" onclick="viewMore()">
+            Xem thêm sản phẩm
+          </button>
+        </div>
+        <h2 class="section-title">Trái cây Nhập Khẩu</h2>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image grape-img">
+            <img src="wed trái cây/Screenshot 2025-09-28 160814.png" alt="" />
+          </div>
+          <div class="product-name">Hồng táo Vip nội địa Trung (I0004884)</div>
+          <div class="product-price">200.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Hồng táo Vip nội địa Trung')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Hồng táo Vip nội địa Trung')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image durian-img">
+            <img src="wed trái cây/Screenshot 2025-09-28 161412.png" alt="" />
+          </div>
+          <div class="product-name">
+            Cherry vàng Mỹ size 9.5 (I0004754) (W00315)
+          </div>
+          <div class="product-price">210.000đ</div>
+          <div class="product-actions">
+            <button class="btn-buy" onclick="buyProduct('Cherry vàng Mỹ')">
+              Mua
+            </button>
+            <button class="btn-cart" onclick="addToCart('Cherry vàng Mỹ')">
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image cherry-img">
+            <img src="wed trái cây/Screenshot 2025-09-28 161657.png" alt="" />
+          </div>
+          <div class="product-name">Nho đỏ Sparkle Sunview Mỹ</div>
+          <div class="product-price">110.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Nho đỏ Sparkle Sunview')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Nho đỏ Sparkle Sunview')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image orange-img">
+            <img src="wed trái cây/Screenshot 2025-09-28 161908.png" alt="" />
+          </div>
+          <div class="product-name">Dâu tây giống Mỹ 250G (I0008922)</div>
+          <div class="product-price">210.000đ</div>
+          <div class="product-actions">
+            <button class="btn-buy" onclick="buyProduct('Dâu tây giống Mỹ')">
+              Mua
+            </button>
+            <button class="btn-cart" onclick="addToCart('Dâu tây giống Mỹ')">
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="section-header">
+        <div class="header-top">
+          <div class="top-line"></div>
+          <button class="view-more-btn" onclick="viewMore()">
+            Xem thêm sản phẩm
+          </button>
+        </div>
+        <h2 class="section-title">Quà tặng trái cây</h2>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image grape-img">
+            <img src="wed trái cây/Screenshot 2025-09-24 171135.png" alt="" />
+          </div>
+          <div class="product-name">Hộp Quà Trái Cây Tone Hồng Cơ Bản</div>
+          <div class="product-price">430.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Hộp Quà Trái Cây Tone Hồng Cơ Bản')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Hộp Quà Trái Cây Tone Hồng Cơ Bản')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image durian-img">
+            <img src="wed trái cây/Screenshot 2025-09-28 162319.png" alt="" />
+          </div>
+          <div class="product-name">Hộp Quà Trái Cây Và Ăn Vặt Tone Kem</div>
+          <div class="product-price">560.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Hộp Quà Trái Cây Và Ăn Vặt Tone Kem ')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Hộp Quà Trái Cây Và Ăn Vặt Tone Kem ')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image cherry-img">
+            <img src="wed trái cây/Screenshot 2025-09-28 162157.png" alt="" />
+          </div>
+          <div class="product-name">Hộp Quà Nho Xanh - Nho Đỏ Tone Hồng</div>
+          <div class="product-price">350.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Hộp Quà Nho Xanh - Nho Đỏ Tone Hồng')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Hộp Quà Nho Xanh - Nho Đỏ Tone Hồng')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image orange-img">
+            <img src="wed trái cây/Screenshot 2025-09-28 162443.png" alt="" />
+          </div>
+          <div class="product-name">
+            Hộp Quà Trái Cây Tươi Và Socola Thanh Lịch
+          </div>
+          <div class="product-price">620.000đ</div>
+          <div class="product-actions">
+            <button
+              class="btn-buy"
+              onclick="buyProduct('Hộp Quà Trái Cây Tươi Và Socola Thanh Lịch')"
+            >
+              Mua
+            </button>
+            <button
+              class="btn-cart"
+              onclick="addToCart('Hộp Quà Trái Cây Tươi Và Socola Thanh Lịch')"
+            >
+              Thêm giỏ hàng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nenmain">
+      <img src="DACN/wed trái cây/xyz.jpg" alt="" />
+    </div>
+
+    <div class="page-wrapper">
+      <!-- Left Column - Discount Codes -->
+      <div class="voucher-container">
+        <div class="voucher-title">Mã giảm giá</div>
+
+        <div class="coupon-card">
+          <div class="coupon-label">
+            <img src="DACN/wed trái cây/sale.png" alt="" />
+          </div>
+          <div class="coupon-details">
+            <div class="coupon-name">Giảm giá 55k</div>
+            <div class="coupon-description">
+              Đơn hàng mua 600k trở lên hoặc tạo my/nhỏ han
+            </div>
+            <div class="coupon-expiry">HSD: 30/05/2025</div>
+            <div class="coupon-minimum">Mua thêm 30.000 đ</div>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+          <button class="use-button" onclick="applyDiscount('55k')">
+            Áp vào
+          </button>
+        </div>
+
+        <div class="coupon-card">
+          <div class="coupon-label">
+            <img src="DACN/wed trái cây/sale.png" alt="" />
+          </div>
+          <div class="coupon-details">
+            <div class="coupon-name">Giảm giá 70k</div>
+            <div class="coupon-description">
+              Đơn hàng mua 800k trở lên hoặc mua hộp quà trái cây/ trái cây sấy
+            </div>
+            <div class="coupon-expiry">HSD: 30/05/2025</div>
+            <div class="coupon-minimum">Mua thêm 36.000 đ</div>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+          <button class="use-button" onclick="applyDiscount('70k')">
+            Áp vào
+          </button>
+        </div>
+        <div class="top-line"></div>
+        <div class="voucher-title">Mã vận chuyển</div>
+        <div class="coupon-card">
+          <div class="coupon-label freebie">
+            <div class="coupon-label">
+              <img src="DACN/wed trái cây/free.png" alt="" />
+            </div>
+          </div>
+          <div class="coupon-details">
+            <div class="coupon-name">Giảm giá 35k</div>
+            <div class="coupon-description">
+              Đơn hàng mua 300k trở lên hoặc thành viên đã mua 3 đơn liên web
+            </div>
+            <div class="coupon-expiry">HSD: 30/05/2025</div>
+            <div class="coupon-minimum">Mua thêm 30.000 đ</div>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+          <button class="use-button" onclick="applyDiscount('35k')">
+            Áp vào
+          </button>
+        </div>
+
+        <div class="coupon-card">
+          <div class="coupon-label freebie">
+            <div class="coupon-label">
+              <img src="DACN/wed trái cây/free.png" alt="" />
+            </div>
+          </div>
+          <div class="coupon-details">
+            <div class="coupon-name">Giảm giá 25k</div>
+            <div class="coupon-description">
+              Đơn hàng mua 200k trở lên hoặc mua hộp quà trái cây
+            </div>
+            <div class="coupon-expiry">HSD: 30/05/2025</div>
+            <div class="coupon-minimum">Mua thêm 30.000 đ</div>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+          <button class="use-button" onclick="applyDiscount('25k')">
+            Áp vào
+          </button>
+        </div>
+
+        <div class="coupon-card">
+          <div class="coupon-label freebie">
+            <div class="coupon-label">
+              <img src="DACN/wed trái cây/free.png" alt="" />
+            </div>
+          </div>
+          <div class="coupon-details">
+            <div class="coupon-name">Giảm giá 20k</div>
+            <div class="coupon-description">
+              Đơn hàng mua 150k trở lên hoặc mua hộp quà trái cây
+            </div>
+            <div class="coupon-expiry">HSD: 30/05/2025</div>
+            <div class="coupon-minimum">Mua thêm 50.000 đ</div>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+          <button class="use-button" onclick="applyDiscount('20k')">
+            Áp vào
+          </button>
+        </div>
+
+        <div class="code-input-area">
+          <p>
+            📋 CHỌN MÃ KHUYẾN MÃI Có thể áp dụng đồng thời nhiều mã khi hợp điều
+            kiện
+          </p>
+          <div class="input-group">
+            <input
+              type="text"
+              class="code-field"
+              placeholder="Nhập mã khuyến mãi/ Quà tặng"
+            />
+            <button class="submit-code-button" onclick="applyPromoCode()">
+              Áp dụng
+            </button>
           </div>
         </div>
       </div>
 
-      <div class="header">
-        <div class="thanhdieuhuong">
-          <div class="welcome">Fruit xin chào quý khách!</div>
-          <div class="header-left">
-            <div class="nav">
-              <a href="#">Trang chủ</a>
-              <a href="#">Sản Phẩm</a>
-              <a href="#">Giới Thiệu</a>
-              <a href="#">Liên Hệ</a>
+      <!-- Right Column - Deal Hot & Flash Sale -->
+      <div class="offers-wrapper">
+        <!-- Deal Hot -->
+        <div class="hot-deals">
+          <div class="offer-header">Deal Hot</div>
+          <div class="Dealhot">
+            <div class="card">
+              <img
+                src="wed trái cây/Screenshot 2025-09-28 160814.png"
+                alt="Cherry đỏ Canada"
+                class="img"
+              />
+              <div class="info">
+                <div class="title">Cherry đỏ Canada</div>
+                <div class="size">size 10 - 250G</div>
+                <div class="price">142.000đ</div>
+                <div class="actions">
+                  <button class="button buy">Mua</button>
+                  <button class="button cart">Thêm giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="cardx">
+              <img
+                src="wed trái cây/Screenshot 2025-09-28 160814.png"
+                alt="Cherry đỏ Canada"
+                class="imgx"
+              />
+              <div class="infox">
+                <div class="titlex">Cherry đỏ Canada</div>
+                <div class="sizex">size 10 - 250G</div>
+                <div class="pricex">142.000đ</div>
+                <div class="actionsx">
+                  <button class="buttonx buyx">Mua</button>
+                  <button class="buttonx cartx">Thêm giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="cardxy">
+              <img
+                src="wed trái cây/Screenshot 2025-09-28 160814.png"
+                alt="Cherry đỏ Canada"
+                class="imgxy"
+              />
+              <div class="infoxy">
+                <div class="titlexy">Cherry đỏ Canada</div>
+                <div class="sizexy">size 10 - 250G</div>
+                <div class="pricexy">142.000đ</div>
+                <div class="actionsxy">
+                  <button class="buttonx buyxy">Mua</button>
+                  <button class="buttonx cartxy">Thêm giỏ hàng</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="logo">
-          <img src="DACN/logo.png" alt="Fruit Logo" />
-        </div>
-        <div class="header-right">
-          <div class="search-bar">
-            <input type="text" placeholder="tìm sản phẩm" />
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <circle cx="11" cy="11" r="7"></circle>
-                <line x1="16.65" y1="16.65" x2="22" y2="22"></line>
-              </svg>
+        <!-- Flash Sale -->
+        <div class="flash-offers">
+          <div class="offer-header">Flash sale</div>
+          <div class="Dealhot">
+            <div class="card">
+              <img
+                src="wed trái cây/Screenshot 2025-09-28 160814.png"
+                alt="Cherry đỏ Canada"
+                class="img"
+              />
+              <div class="info">
+                <div class="title">Cherry đỏ Canada</div>
+                <div class="size">size 10 - 250G</div>
+                <div class="price">142.000đ</div>
+                <div class="actions">
+                  <button class="button buy">Mua</button>
+                  <button class="button cart">Thêm giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="cardx">
+              <img
+                src="wed trái cây/Screenshot 2025-09-28 160814.png"
+                alt="Cherry đỏ Canada"
+                class="imgx"
+              />
+              <div class="infox">
+                <div class="titlex">Cherry đỏ Canada</div>
+                <div class="sizex">size 10 - 250G</div>
+                <div class="pricex">142.000đ</div>
+                <div class="actionsx">
+                  <button class="buttonx buyx">Mua</button>
+                  <button class="buttonx cartx">Thêm giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div class="cardxy">
+              <img
+                src="wed trái cây/Screenshot 2025-09-28 160814.png"
+                alt="Cherry đỏ Canada"
+                class="imgxy"
+              />
+              <div class="infoxy">
+                <div class="titlexy">Cherry đỏ Canada</div>
+                <div class="sizexy">size 10 - 250G</div>
+                <div class="pricexy">142.000đ</div>
+                <div class="actionsxy">
+                  <button class="buttonx buyxy">Mua</button>
+                  <button class="buttonx cartxy">Thêm giỏ hàng</button>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M12 21s-6-4.35-9-8.5S3.5 3 7.5 3c2 0 4 1 4.5 2.09C12.5 4 14.5 3 16.5 3 20.5 3 24 7 21 12.5S12 21 12 21z"
-              ></path>
-            </svg>
-            <span class="count">0</span>
-          </div>
-
-          <div class="item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <circle cx="9" cy="21" r="1"></circle>
-              <circle cx="20" cy="21" r="1"></circle>
-              <path
-                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
-              ></path>
-            </svg>
-            <span class="count">0</span>
-          </div>
-
-          <div class="item user">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <circle cx="12" cy="8" r="4"></circle>
-              <path d="M6 20c0-3.33 2.67-6 6-6s6 2.67 6 6"></path>
-            </svg>
-          </div>
         </div>
       </div>
+    </div>
+  </body>
 
-      <main>
-        <div class="nenmain">
-          <img src="DACN/trang chủ.png" alt="" />
-        </div>
-        <div class="Rectangle"></div>
-        <div class="navigation-bar">
-          <button class="nav-button" onclick="handleClick('az')">Từ A→Z</button>
-          <button class="nav-button" onclick="handleClick('tang')">
-            Giá Tăng Dần
-          </button>
-          <button class="nav-button" onclick="handleClick('giam')">
-            Giá Giảm Dần
-          </button>
-          <button class="nav-button" onclick="handleClick('moi')">
-            Hàng Mới
-          </button>
-        </div>
-        <div class="hot-header">
-          <div class="divider-line"></div>
-          <h1 class="hot-title">Hot Hôm Nay</h1>
-        </div>
-      </main>
-      <div class="products-container">
-        <div class="product-card">
-          <div class="product-image kiwi-image"></div>
-          <div class="product-title">
-            kiwi nezland thom ngon toả sáng á âu _Zneland
-          </div>
-          <div class="product-price">399.000đ</div>
-          <button
-            class="add-to-cart-btn"
-            onclick="addToCart(this, 'Kiwi Nezland')"
-          >
-            +Thêm vào giỏ
-          </button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image durian-image"></div>
-          <div class="product-title">
-            <span class="product-name-green">Sầu riêng cơm Ri6</span><br />
-            Huynh Lam (W00315)
-          </div>
-          <div class="product-price">399.000đ</div>
-          <button
-            class="add-to-cart-btn"
-            onclick="addToCart(this, 'Sầu riêng cơm Ri6')"
-          >
-            +Thêm vào giỏ
-          </button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image kiwi-image"></div>
-          <div class="product-title">
-            kiwi nezland thom ngon toả sáng á âu _Zneland
-          </div>
-          <div class="product-price">399.000đ</div>
-          <button
-            class="add-to-cart-btn"
-            onclick="addToCart(this, 'Kiwi Nezland')"
-          >
-            +Thêm vào giỏ
-          </button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image kiwi-image"></div>
-          <div class="product-title">
-            kiwi nezland thom ngon toả sáng á âu _Zneland
-          </div>
-          <div class="product-price">399.000đ</div>
-          <button
-            class="add-to-cart-btn"
-            onclick="addToCart(this, 'Kiwi Nezland')"
-          >
-            +Thêm vào giỏ
-          </button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image kiwi-image"></div>
-          <div class="product-title">
-            kiwi nezland thom ngon toả sáng á âu _Zneland
-          </div>
-          <div class="product-price">399.000đ</div>
-          <button
-            class="add-to-cart-btn"
-            onclick="addToCart(this, 'Kiwi Nezland')"
-          >
-            +Thêm vào giỏ
-          </button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image kiwi-image"></div>
-          <div class="product-title">
-            kiwi nezland thom ngon toả sáng á âu _Zneland
-          </div>
-          <div class="product-price">399.000đ</div>
-          <button
-            class="add-to-cart-btn"
-            onclick="addToCart(this, 'Kiwi Nezland')"
-          >
-            +Thêm vào giỏ
-          </button>
-        </div>
-
-        <div class="view-more-container">
-          <button class="view-more-btn" onclick="viewMore()">Xem Thêm</button>
-        </div>
-      </div>
-    </body>
-  </div>
   <script src="script.js"></script>
 </html>
